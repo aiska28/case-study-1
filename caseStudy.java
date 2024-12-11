@@ -51,8 +51,22 @@ public class caseStudy {
 
         System.out.println("=== LIST OF ALL ACHIEVEMENTS ==="); 
         for (int i = 0; i < row; i++) {
-        System.out.println("\nName: " + nameStudent[i][0] + " | " + "NIM: " + nameStudent[i][1] + " | " + "Type: " + nameStudent[i][2] +
-         " | " + "Level: " + nameStudent[i][3] + " | " + "Year: " + nameStudent[i][4] + " | ");}
+            System.out.print("\n");
+            for (int j = 0; j < 5; j++) {
+                if (j == 0) {
+                    System.out.print("Name: " + nameStudent[i][j] + " | ");
+                } else if (j == 1) {
+                    System.out.print("NIM: " + nameStudent[i][j] + " | ");
+                } else if (j == 2) {
+                    System.out.print("Type: " + nameStudent[i][j] + " | ");
+                } else if (j == 3) {
+                    System.out.print("Level: " + nameStudent[i][j] + " | ");
+                } else if (j == 4) {
+                    System.out.print("Year: " + nameStudent[i][j] + " | ");
+                }
+            }
+        }
+        System.out.println();
     }
 
     static void analyzeAchievements() {
